@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="main grid grid--col-2 round">
+      <div class="card card-result flex--col gap--l round">
+        <h2 class="result-title">Your Result</h2>
+        <div class="result-circle flex--col gap--s">
+          <p class="result-number">76</p>
+          <p class="result-detail">of 100</p>
+        </div>
+        <div class="result-label">Great</div>
+        <div class="result-description">
+          You scored higher than 65% of the people who have taken these tests.
+        </div>
+      </div>
+      <div class="card card-summary flex--col gap--l">
+        <h2 class="summary-title">Summary</h2>
+        <ul class="summary-list flex--col gap--m">
+          <li class="summary-item summary-item--red flex">
+            <div class="flex">
+              <img
+                src="./assets/images/icon-reaction.svg"
+                alt="Icon of a lightening bolt"
+              />
+
+              <span class="summary-item__label">Reaction</span>
+            </div>
+            <div class="flex">
+              <span class="summary-item__rate"> <span>80</span> / 100 </span>
+            </div>
+          </li>
+
+          <li class="summary-item summary-item--yellow flex">
+            <div class="flex">
+              <img
+                src="./assets/images/icon-memory.svg"
+                alt="Icon of a brain"
+              />
+              <span class="summary-item__label">Memory</span>
+            </div>
+            <div class="flex">
+              <span class="summary-item__rate"><span> 92</span> / 100</span>
+            </div>
+          </li>
+
+          <li class="summary-item summary-item--green flex">
+            <div class="flex">
+              <img
+                src="./assets/images/icon-verbal.svg"
+                alt="Icon of a comment"
+              />
+              <span class="summary-item__label">Verbal</span>
+            </div>
+            <div class="flex">
+              <span class="summary-item__rate"><span> 61</span> / 100</span>
+            </div>
+          </li>
+
+          <li class="summary-item summary-item--blue flex">
+            <div class="flex">
+              <img src="./assets/images/icon-visual.svg" alt="Icon of an eye" />
+              <span class="summary-item__label">Visual</span>
+            </div>
+            <div class="flex">
+              <span class="summary-item__rate"><span>72</span> / 100</span>
+            </div>
+          </li>
+        </ul>
+        <button class="btn-continue">Continue</button>
+      </div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://github.com/thejayl/results-summary-component"
+          target="_blank"
+          >Jay L</a
+        >.
+      </div>
+    </footer>
+  </body>
+</html>
